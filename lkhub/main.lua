@@ -5,7 +5,7 @@ local url_redirects = {
     ["https://raw.githubusercontent.com/LeoKholYt/lkhub/main/lol.json"] = "https://raw.githubusercontent.com/SpiritXmas/lua-cracks/main/lkhub/dependencies/lol.json";
 }
 
-local scripts_directory = "https://raw.githubusercontent.com/SpiritXmas/lua-cracks/main/lkhub/dependencies/scripts/"
+local scripts_directory = "https://github.com/v1peer/lua-cracks/tree/main/lkhub/dependencies/scripts"
 
 local old; old = hookfunction(game.HttpGet, function(self, url)
     if url_redirects[url] then
@@ -19,4 +19,4 @@ local old; old = hookfunction(game.HttpGet, function(self, url)
     end
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiritXmas/lua-cracks/main/lkhub/dependencies/loader.lua"))()
+loadstring(game:HttpGet("https://github.com/v1peer/lua-cracks/tree/main/lkhub/dependencies/loader.lua"))()
